@@ -1,0 +1,42 @@
+[project]
+name = "resume-gap-agent"
+version = "0.1.0"
+description = "Agentic system that produces a prioritized skill-gap report from a resume and target role."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pydantic>=2.6",
+    "pydantic-settings>=2.2",
+    "structlog>=24.1",
+    "langgraph>=0.2",
+    "langgraph-checkpoint-sqlite>=1.0",
+    "anthropic>=0.39",
+    "openai>=1.40",
+    "httpx>=0.27",
+    # Agentic mode (LLM sourcing agent + critic over MCP)
+    "mcp>=1.2",
+    "langchain-mcp-adapters>=0.1",
+    "langchain-openai>=0.2",
+    "pandas>=2.2",
+    "ipython>=8.0",
+    # PDF resume support (text-layer extraction; scanned PDFs need OCR)
+    "pypdf>=4.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.23",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["config", "models", "taxonomy", "logging_conf", "conftest"]
+packages = ["sources", "llm", "prompts", "graph"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]

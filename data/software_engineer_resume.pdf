@@ -1,0 +1,71 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+5 0 obj
+<< /Length 2058 >>
+stream
+BT /F1 9 Tf 40 800 Td 11 TL
+(Alex Lim) Tj T*
+(Software Engineer | Singapore) Tj T*
+(alex.lim@email.com | github.com/alexlim | linkedin.com/in/alexlim) Tj T*
+() Tj T*
+(SUMMARY) Tj T*
+(Software engineer with 4 years of experience building and operating backend) Tj T*
+(services and web applications. Comfortable owning features end to end, from) Tj T*
+(API design through deployment and monitoring. Looking to deepen distributed) Tj T*
+(systems and platform engineering skills.) Tj T*
+() Tj T*
+(EXPERIENCE) Tj T*
+(Software Engineer, Nimbus Commerce Pte Ltd \(Jul 2022 - Present\)) Tj T*
+(- Design and maintain order-management microservices in Go and TypeScript) Tj T*
+(  serving 2M+ requests/day on AWS \(ECS, RDS, SQS\).) Tj T*
+(- Led migration of the checkout API from a PHP monolith to Node.js services,) Tj T*
+(  cutting p95 latency by 40%.) Tj T*
+(- Introduced contract tests and CI/CD pipelines \(GitHub Actions\), reducing) Tj T*
+(  release regressions.) Tj T*
+(- Mentor two junior engineers; run design reviews for the payments squad.) Tj T*
+() Tj T*
+(Junior Software Engineer, Kestrel Labs \(Jun 2020 - Jun 2022\)) Tj T*
+(- Built REST APIs and internal dashboards with Python \(FastAPI\) and React.) Tj T*
+(- Implemented PostgreSQL schema changes and query tuning for reporting loads.) Tj T*
+(- On-call rotation: triaged production incidents, wrote runbooks.) Tj T*
+() Tj T*
+(EDUCATION) Tj T*
+(B.Eng. in Computer Engineering, Nanyang Technological University \(2016 - 2020\)) Tj T*
+() Tj T*
+(SKILLS) Tj T*
+(- Languages: Go, TypeScript, Python, SQL, JavaScript) Tj T*
+(- Backend: REST APIs, microservices, PostgreSQL, Redis, SQS, gRPC) Tj T*
+(- Cloud/DevOps: AWS, Docker, Terraform, CI/CD, GitHub Actions, monitoring) Tj T*
+(- Frontend: React, HTML/CSS) Tj T*
+(- Practices: code review, unit/integration testing, agile, incident response) Tj T*
+() Tj T*
+(PROJECTS) Tj T*
+(Open-source contributor: patches to a Go rate-limiting library \(retry jitter,) Tj T*
+(benchmarks\). Personal project: self-hosted expense tracker \(Next.js, Postgres\).) Tj T*
+ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000000311 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+2421
+%%EOF
