@@ -59,14 +59,14 @@ class JobSource(ABC):
     ) -> bool:
         """Heuristic seniority filter based on title/level tokens.
 
-        Titles with no seniority marker at all are accepted for every level —
+        Titles with no seniority marker at all are accepted for every level -
         most postings don't state seniority in the title, and rejecting them
         would empty the result set.
         """
         haystack = f"{posting.title} {posting.level or ''}".lower()
         is_senior = any(marker in haystack for marker in self._SENIOR_MARKERS)
         # Entry tokens include short ones like "i"/"l1", so match whole words
-        # only — a substring check would hit the "i" in "senior".
+        # only - a substring check would hit the "i" in "senior".
         words = set(re.split(r"[^a-z0-9]+", haystack))
         is_entry = any(token in words for token in entry_tokens)
 

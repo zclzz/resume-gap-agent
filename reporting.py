@@ -65,7 +65,7 @@ def render_markdown(report: GapReport) -> str:
     """Readable Markdown summary for IPython.display.Markdown."""
     ts = report.generated_at.strftime("%Y-%m-%d %H:%M UTC")
     lines = [
-        f"# Skill Gap Report — {report.target_role} ({report.level})",
+        f"# Skill Gap Report - {report.target_role} ({report.level})",
         "",
         f"*Generated {ts} · {report.postings_analyzed} postings analyzed*",
         "",
@@ -85,7 +85,7 @@ def render_markdown(report: GapReport) -> str:
             freq = f"{gap.requirement.frequency:.0%}"
             lines.append(
                 f"- **{gap.requirement.skill}** "
-                f"({gap.requirement.category}, {freq} of postings) — {gap.remediation}"
+                f"({gap.requirement.category}, {freq} of postings) - {gap.remediation}"
             )
         lines.append("")
     return "\n".join(lines).rstrip()

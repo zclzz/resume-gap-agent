@@ -4,7 +4,7 @@ Run as its own process over stdio (``python mcp_server.py``). The LangGraph
 sourcing agent connects to it as an MCP client and calls these tools to decide
 *how* to search and *which* postings to keep.
 
-Design note: tools are written to be **stateless across calls** — everything a
+Design note: tools are written to be **stateless across calls** - everything a
 tool needs is reconstructable from its arguments plus data loaded at startup.
 So it does not matter whether the MCP client keeps one persistent subprocess or
 spawns a fresh one per call. For the mock source that works because every

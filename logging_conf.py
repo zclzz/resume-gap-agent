@@ -29,7 +29,7 @@ def configure_logging(level: str = "INFO", *, colors: bool = True, stream=None) 
 
     # HTTP client libraries log full request URLs at INFO. Adzuna credentials
     # (app_id/app_key) ride in the URL query string, so those lines would leak
-    # secrets into notebook output — keep these loggers at WARNING always.
+    # secrets into notebook output - keep these loggers at WARNING always.
     for noisy in ("httpx", "httpcore", "openai"):
         logging.getLogger(noisy).setLevel(logging.WARNING)
 
